@@ -26,6 +26,7 @@ const Navbar = () => {
             <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
                 <li><a href="#" onClick={() => setIsMobileMenuOpen(false)}>[ HOME ]</a></li>
                 <li><a href="#collection" onClick={() => setIsMobileMenuOpen(false)}>[ COLLECTION ]</a></li>
+                <li><a href="#roadmap" onClick={() => setIsMobileMenuOpen(false)}>[ ROADMAP ]</a></li>
                 <li><a href="#faq" onClick={() => setIsMobileMenuOpen(false)}>[ FAQS ]</a></li>
             </ul>
             <div className="nav-actions">

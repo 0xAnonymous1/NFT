@@ -238,7 +238,8 @@ button {
   background-image: url('/graffiti.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;
+  background-size: 150%;
+  /* Increased from 60% */
   opacity: 0.2;
   /* Increased from 0.08 */
   filter: blur(60px);

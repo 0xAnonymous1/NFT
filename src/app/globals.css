@@ -242,8 +242,8 @@ button {
   /* Increased from 60% */
   opacity: 0.2;
   /* Increased from 0.08 */
-  filter: blur(60px);
-  /* Increased from 30px */
+  filter: blur(10px);
+  /* Reduced from 60px */
   z-index: 1;
   pointer-events: none;
 }

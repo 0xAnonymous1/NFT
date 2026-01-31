@@ -272,7 +272,8 @@ button {
 /* Ensure content is above background effects */
 .hero-section>* {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  /* Increased from 2 to be clearly above noise (z:2) and graffiti (z:1) */
 }
 
 .hero-social-links-mobile {
@@ -294,8 +295,8 @@ button {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1.8fr 1fr;
-  /* More balanced ratio */
+  grid-template-columns: 1.25fr 1.5fr 1.25fr;
+  /* Balanced layout for smaller central image */
   gap: 40px;
   align-items: center;
   flex: 1;
@@ -426,10 +427,11 @@ button {
 
 .character-image-box img {
   max-width: 100%;
-  width: 540px;
-  /* Reduced from 700px for better balance */
+  width: 480px;
+  /* Reduced from 540px for better balance */
   height: auto;
-  filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.15));
+  filter: none;
+  /* Removed drop-shadow to eliminate perceived blur */
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
